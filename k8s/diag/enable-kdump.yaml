@@ -13,7 +13,7 @@ spec:
         app: enable-kdump
     spec:
       nodeSelector:
-        agentpool: system
+        kubernetes.io/os: linux
       containers:
       - volumeMounts:
         - name: host-root
